@@ -23,13 +23,14 @@ DB_USERNAME=your-db-user
 DB_PASSWORD=your-db-password
 ```
 
-### Session and Cache
+### Session and Cache (Serverless Optimized)
 ```
 SESSION_DRIVER=cookie
 SESSION_LIFETIME=120
 CACHE_DRIVER=array
 QUEUE_CONNECTION=sync
 LOG_CHANNEL=stderr
+VIEW_COMPILED_PATH=/tmp
 ```
 
 ### Mail Configuration (if needed)
@@ -44,13 +45,14 @@ MAIL_FROM_ADDRESS=noreply@your-domain.com
 MAIL_FROM_NAME="Asset Management System"
 ```
 
-## Important Notes
+## Important Notes for Serverless Deployment
 
-1. Generate APP_KEY locally: `php artisan key:generate --show`
-2. Use a cloud database service like PlanetScale, Railway, or Supabase
-3. File uploads will need external storage like AWS S3 or Cloudinary
-4. Session storage should use 'cookie' driver for serverless
-5. Logs should use 'stderr' channel for Vercel
+1. **No Caching**: Artisan commands like `config:cache` don't work in serverless
+2. **Database**: Use cloud database (PlanetScale, Railway, Supabase)
+3. **File Storage**: Use external storage (AWS S3, Cloudinary) for uploads
+4. **Sessions**: Must use 'cookie' driver
+5. **Logs**: Use 'stderr' channel for Vercel
+6. **Views**: Compiled to /tmp directory
 
 ## Deployment Steps
 
@@ -58,4 +60,17 @@ MAIL_FROM_NAME="Asset Management System"
 2. Login: `vercel login`
 3. Deploy: `vercel --prod`
 4. Set environment variables in Vercel dashboard
-5. Run migrations on your database manually or via database client
+5. Run migrations on your database manually
+
+## Fixed Build Script
+
+The build script now only runs Node.js commands:
+```json
+{
+  "scripts": {
+    "vercel-build": "npm run build"
+  }
+}
+```
+
+PHP optimization commands are skipped since they don't work in serverless environments.

@@ -1,0 +1,3 @@
+asset_name,type,serial_number,model,asset_tag,purchase_date,warranty_end_date,expected_lifespan,status
+Sample Asset Name,Laptop,SN123456,Sample Model,ATAGSAMPLE,2025-07-14,2027-07-14,2029-07-14,Active
+Sample Asset Name,Desktop,SN123456,Sample Model,ATAGSAMPLE,2025-07-14,2027-07-14,2029-07-14,Active

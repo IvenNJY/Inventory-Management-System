@@ -1,0 +1,3 @@
+name,email,password,role
+John Doe,john@gmail.com,1234567890,admin
+Jane Smith,jane@gmail.com,1234567890,user

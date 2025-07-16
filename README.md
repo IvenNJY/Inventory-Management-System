@@ -25,9 +25,9 @@ git clone <your-repo-url>
 ```
 
 ### 2. Move Project to XAMPP Directory
-Place the project folder (e.g., `RAD2Front`) inside your XAMPP `htdocs` directory:
+Place the project folder (e.g., `IMS`) inside your XAMPP `htdocs` directory:
 ```
-C:\xampp\htdocs\RAD2Front
+C:\xampp\htdocs\IMS
 ```
 
 ### 3. Install PHP Dependencies
@@ -70,7 +70,7 @@ php artisan migrate --seed
 ### 9. Access the Application
 Open your browser and go to:
 ```
-http://localhost/RAD2Front/public
+http://localhost/IMS/public
 ```
 
 ## Usage

@@ -11,16 +11,6 @@
 
 This is a Laravel-based Asset Management System for tracking assets, warranties, deployments, lifespan, and user/admin management. It is designed to run on XAMPP (Windows) with PHP, MySQL, and Node.js for frontend asset building.
 
-## Features
-- Asset CRUD (Create, Read, Update, Delete)
-- Warranty and Lifespan tracking
-- Asset deployment and history
-- User and admin authentication/registration
-- Toast notifications for status/errors
-- Responsive UI with Tailwind CSS
-- Filtering, sorting, and pagination for tables
-- Modal dialogs for confirmation and asset assignment
-
 ## Prerequisites
 - XAMPP (Apache, MySQL, PHP >= 8.1)
 - Composer (PHP dependency manager)

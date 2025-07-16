@@ -1,4 +1,7 @@
-# Asset Management System (Laravel)
+# Inventory Management System (Laravel)
+
+
+<img width="1692" height="857" alt="image" src="https://raw.githubusercontent.com/IvenNJY/Inventory-Management-System/refs/heads/main/public/IMSbanner.png" />
 
 <p align="center">
   <img src="https://img.shields.io/badge/Laravel-10.x-red?logo=laravel" alt="Laravel">

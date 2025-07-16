@@ -8,8 +8,6 @@
   <img src="https://img.shields.io/badge/XAMPP-3.3-orange?logo=xampp" alt="XAMPP">
 </p>
 
-# Asset Management System (Laravel)
-
 This is a Laravel-based Asset Management System for tracking assets, warranties, deployments, lifespan, and user/admin management. It is designed to run on XAMPP (Windows) with PHP, MySQL, and Node.js for frontend asset building.
 
 ## Features

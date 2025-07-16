@@ -1,5 +1,15 @@
 # Asset Management System (Laravel)
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Laravel-10.x-red?logo=laravel" alt="Laravel">
+  <img src="https://img.shields.io/badge/PHP-%3E=8.1-blue?logo=php" alt="PHP">
+  <img src="https://img.shields.io/badge/MySQL-8.0-blue?logo=mysql" alt="MySQL">
+  <img src="https://img.shields.io/badge/Node.js-%3E=18-green?logo=node.js" alt="Node.js">
+  <img src="https://img.shields.io/badge/XAMPP-3.3-orange?logo=xampp" alt="XAMPP">
+</p>
+
+# Asset Management System (Laravel)
+
 This is a Laravel-based Asset Management System for tracking assets, warranties, deployments, lifespan, and user/admin management. It is designed to run on XAMPP (Windows) with PHP, MySQL, and Node.js for frontend asset building.
 
 ## Features
@@ -25,9 +35,9 @@ git clone <your-repo-url>
 ```
 
 ### 2. Move Project to XAMPP Directory
-Place the project folder (e.g., `IMS`) inside your XAMPP `htdocs` directory:
+Place the project folder (e.g., `sample`) inside your XAMPP `htdocs` directory:
 ```
-C:\xampp\htdocs\IMS
+C:\xampp\htdocs\sample
 ```
 
 ### 3. Install PHP Dependencies
@@ -70,7 +80,7 @@ php artisan migrate --seed
 ### 9. Access the Application
 Open your browser and go to:
 ```
-http://localhost/IMS/public
+http://localhost/sample/public
 ```
 
 ## Usage
@@ -87,3 +97,11 @@ npm run build
 - If you see blank pages, check `.env` settings and run `php artisan config:cache`.
 - For asset errors, run `npm run build` again.
 - For database errors, ensure MySQL is running and credentials are correct.
+
+## License
+MIT
+
+---
+For further customization, see the Blade templates in `resources/views` and controllers in `app/Http/Controllers`.
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
